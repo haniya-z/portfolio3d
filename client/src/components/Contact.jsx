@@ -29,7 +29,7 @@ export default function Contact() {
     }
     setStatus('loading')
     try {
-      const res = await axios.post('/api/contact', form)
+      const res = await axios.post('https://portfolio3d-backend.onrender.com/api/contact',form)
       setStatus('success')
       showToast(`✅ ${res.data.message}`)
       setForm({ name: '', email: '', subject: '', message: '' })
