@@ -29,8 +29,8 @@ const TIMELINE = [
     icon: '🧠',
   },
   {
-    date: '2023 – Present',
-    role: 'B.Tech Information Technology',
+    date: '2024 – Present',
+    role: 'B.Tech Information Technology - SIMATS University',
     org: 'Chennai, Tamil Nadu',
     orgColor: '#f59e0b',
     desc: 'Studying at the intersection of engineering and enterprise. Applying classroom frameworks to real products in real markets. Best Poster Award for AI email spam classification research.',
