@@ -1,0 +1,66 @@
+/* ── RESET & TOKENS ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Core Palette — Deep Tech + Electric Contrast */
+  --bg:        #020817;
+  --bg2:       #060f2a;
+  --bg3:       #0a1628;
+  --card:      #0d1b35;
+  --card2:     #111f3d;
+
+  /* Electric Indigo — primary */
+  --indigo:    #6366f1;
+  --indigo2:   #818cf8;
+  --indigo3:   #a5b4fc;
+  --indigoA:   rgba(99,102,241,0.15);
+  --indigoGlow:rgba(99,102,241,0.4);
+
+  /* Neon Cyan — contrast accent */
+  --cyan:      #06b6d4;
+  --cyan2:     #22d3ee;
+  --cyanA:     rgba(6,182,212,0.12);
+  --cyanGlow:  rgba(6,182,212,0.35);
+
+  /* Gold — entrepreneurship spark */
+  --gold:      #f59e0b;
+  --gold2:     #fbbf24;
+  --goldA:     rgba(245,158,11,0.12);
+
+  /* Green — live/status */
+  --green:     #10b981;
+  --greenA:    rgba(16,185,129,0.12);
+
+  /* Text */
+  --white:     #f1f5f9;
+  --muted:     #64748b;
+  --muted2:    #94a3b8;
+  --border:    rgba(99,102,241,0.15);
+  --border2:   rgba(6,182,212,0.12);
+
+  /* Typography */
+  --font-head: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--indigo); border-radius: 3px; }
+
+/* Selection */
+::selection { background: var(--indigoA); color: var(--indigo3); }
+
+/* Canvas full coverage */
+canvas { display: block; }
